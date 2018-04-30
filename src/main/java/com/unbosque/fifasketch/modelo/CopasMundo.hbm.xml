@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 30/04/2018 03:49:11 PM by Hibernate Tools 5.1.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="fifasketch" dynamic-insert="false" dynamic-update="false" mutable="true" name="com.unbosque.fifasketch.modelo.CopasMundo" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="copasMundo">
+        <id name="idCopasMundo" type="java.lang.Integer">
+            <column name="id_Copas_Mundo"/>
+            <generator class="identity"/>
+        </id>
+        <many-to-one class="com.unbosque.fifasketch.modelo.Pais" embed-xml="true" fetch="select" insert="true" name="pais" not-found="exception" optimistic-lock="true" unique="false" update="true">
+            <column name="id_pais" not-null="true"/>
+        </many-to-one>
+        <property generated="never" lazy="false" name="ano" optimistic-lock="true" type="date" unique="false">
+            <column length="10" name="ano" not-null="true"/>
+        </property>
+        <set embed-xml="true" fetch="select" inverse="true" lazy="true" mutable="true" name="participacioneses" optimistic-lock="true" sort="unsorted" table="participaciones">
+            <key on-delete="noaction">
+                <column name="id_Copas_Mundo"/>
+            </key>
+            <one-to-many class="com.unbosque.fifasketch.modelo.Participaciones" embed-xml="true" not-found="exception"/>
+        </set>
+    </class>
+</hibernate-mapping>
