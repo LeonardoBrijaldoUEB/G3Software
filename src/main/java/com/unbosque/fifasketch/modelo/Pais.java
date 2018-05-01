@@ -1,5 +1,5 @@
 package com.unbosque.fifasketch.modelo;
-// Generated 30/04/2018 03:49:09 PM by Hibernate Tools 5.1.7.Final
+// Generated 1/05/2018 02:13:37 PM by Hibernate Tools 5.1.7.Final
 
 import java.util.HashSet;
 import java.util.Set;
@@ -11,7 +11,6 @@ public class Pais implements java.io.Serializable {
 
 	private Integer idPais;
 	private String nombrePais;
-	private Set copasMundos = new HashSet(0);
 	private Set equipos = new HashSet(0);
 
 	public Pais() {
@@ -21,9 +20,8 @@ public class Pais implements java.io.Serializable {
 		this.nombrePais = nombrePais;
 	}
 
-	public Pais(String nombrePais, Set copasMundos, Set equipos) {
+	public Pais(String nombrePais, Set equipos) {
 		this.nombrePais = nombrePais;
-		this.copasMundos = copasMundos;
 		this.equipos = equipos;
 	}
 
@@ -41,14 +39,6 @@ public class Pais implements java.io.Serializable {
 
 	public void setNombrePais(String nombrePais) {
 		this.nombrePais = nombrePais;
-	}
-
-	public Set getCopasMundos() {
-		return this.copasMundos;
-	}
-
-	public void setCopasMundos(Set copasMundos) {
-		this.copasMundos = copasMundos;
 	}
 
 	public Set getEquipos() {

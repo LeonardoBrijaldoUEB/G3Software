@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Generated 30/04/2018 03:49:11 PM by Hibernate Tools 5.1.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 1/05/2018 02:13:38 PM by Hibernate Tools 5.1.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
     <class catalog="fifasketch" dynamic-insert="false" dynamic-update="false" mutable="true" name="com.unbosque.fifasketch.modelo.Tecnico" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="tecnico">
         <id name="idTecnico" type="java.lang.Integer">
@@ -17,6 +17,9 @@
         </property>
         <property generated="never" lazy="false" name="idEquipo" optimistic-lock="true" type="int" unique="false">
             <column name="id_equipo" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="puntajeTecnico" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="puntajeTecnico"/>
         </property>
         <set embed-xml="true" fetch="select" inverse="true" lazy="true" mutable="true" name="equipos" optimistic-lock="true" sort="unsorted" table="equipo">
             <key on-delete="noaction">

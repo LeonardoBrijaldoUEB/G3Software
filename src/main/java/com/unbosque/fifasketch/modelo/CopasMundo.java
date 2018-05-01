@@ -1,7 +1,6 @@
 package com.unbosque.fifasketch.modelo;
-// Generated 30/04/2018 03:49:09 PM by Hibernate Tools 5.1.7.Final
+// Generated 1/05/2018 02:13:37 PM by Hibernate Tools 5.1.7.Final
 
-import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -11,20 +10,19 @@ import java.util.Set;
 public class CopasMundo implements java.io.Serializable {
 
 	private Integer idCopasMundo;
-	private Pais pais;
-	private Date ano;
+	private String anfitrion;
+	private Integer ano;
 	private Set participacioneses = new HashSet(0);
 
 	public CopasMundo() {
 	}
 
-	public CopasMundo(Pais pais, Date ano) {
-		this.pais = pais;
-		this.ano = ano;
+	public CopasMundo(String anfitrion) {
+		this.anfitrion = anfitrion;
 	}
 
-	public CopasMundo(Pais pais, Date ano, Set participacioneses) {
-		this.pais = pais;
+	public CopasMundo(String anfitrion, Integer ano, Set participacioneses) {
+		this.anfitrion = anfitrion;
 		this.ano = ano;
 		this.participacioneses = participacioneses;
 	}
@@ -37,19 +35,19 @@ public class CopasMundo implements java.io.Serializable {
 		this.idCopasMundo = idCopasMundo;
 	}
 
-	public Pais getPais() {
-		return this.pais;
+	public String getAnfitrion() {
+		return this.anfitrion;
 	}
 
-	public void setPais(Pais pais) {
-		this.pais = pais;
+	public void setAnfitrion(String anfitrion) {
+		this.anfitrion = anfitrion;
 	}
 
-	public Date getAno() {
+	public Integer getAno() {
 		return this.ano;
 	}
 
-	public void setAno(Date ano) {
+	public void setAno(Integer ano) {
 		this.ano = ano;
 	}
 

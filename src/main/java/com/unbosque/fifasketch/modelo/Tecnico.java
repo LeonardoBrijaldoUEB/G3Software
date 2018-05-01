@@ -1,5 +1,5 @@
 package com.unbosque.fifasketch.modelo;
-// Generated 30/04/2018 03:49:09 PM by Hibernate Tools 5.1.7.Final
+// Generated 1/05/2018 02:13:37 PM by Hibernate Tools 5.1.7.Final
 
 import java.util.Date;
 import java.util.HashSet;
@@ -15,6 +15,7 @@ public class Tecnico implements java.io.Serializable {
 	private String apellido;
 	private Date fechaNacimiento;
 	private int idEquipo;
+	private Integer puntajeTecnico;
 	private Set equipos = new HashSet(0);
 
 	public Tecnico() {
@@ -26,11 +27,13 @@ public class Tecnico implements java.io.Serializable {
 		this.idEquipo = idEquipo;
 	}
 
-	public Tecnico(String nombre, String apellido, Date fechaNacimiento, int idEquipo, Set equipos) {
+	public Tecnico(String nombre, String apellido, Date fechaNacimiento, int idEquipo, Integer puntajeTecnico,
+			Set equipos) {
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.fechaNacimiento = fechaNacimiento;
 		this.idEquipo = idEquipo;
+		this.puntajeTecnico = puntajeTecnico;
 		this.equipos = equipos;
 	}
 
@@ -72,6 +75,14 @@ public class Tecnico implements java.io.Serializable {
 
 	public void setIdEquipo(int idEquipo) {
 		this.idEquipo = idEquipo;
+	}
+
+	public Integer getPuntajeTecnico() {
+		return this.puntajeTecnico;
+	}
+
+	public void setPuntajeTecnico(Integer puntajeTecnico) {
+		this.puntajeTecnico = puntajeTecnico;
 	}
 
 	public Set getEquipos() {
