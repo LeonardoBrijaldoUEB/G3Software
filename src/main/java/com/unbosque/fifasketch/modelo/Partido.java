@@ -8,6 +8,10 @@ import java.util.Date;
  */
 public class Partido implements java.io.Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Integer idPartido;
 	private Equipo equipoByEquipo1;
 	private Equipo equipoByEquipo2;

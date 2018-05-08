@@ -6,6 +6,10 @@ package com.unbosque.fifasketch.modelo;
  */
 public class ParticipacionesId implements java.io.Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Integer idCopasMundo;
 	private Integer idEquipo;
 	private Byte participo;

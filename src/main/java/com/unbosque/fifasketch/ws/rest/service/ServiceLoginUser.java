@@ -8,7 +8,7 @@ import javax.ws.rs.core.MediaType;
 
 import com.unbosque.fifasketch.dao.UsuarioDAO;
 import com.unbosque.fifasketch.modelo.Usuario;
-import com.unbosque.fifasketch.ws.rest.vo.VOUsuario;
+
 
 @Path("/fifaSketch")
 public class ServiceLoginUser {
@@ -17,13 +17,13 @@ public class ServiceLoginUser {
 	@Path("/validarUsuario")
 	@Consumes({ MediaType.APPLICATION_JSON })
 	@Produces({ MediaType.APPLICATION_JSON })
-	public VOUsuario validarUsuario(VOUsuario vo) {
+	public Usuario validarUsuario(Usuario vo) {
 		
 		vo.setEstadoUsuario(false);
 		UsuarioDAO user = new UsuarioDAO();
 		Usuario userObj = null;
 		
-		userObj = user.validarUsuario(vo.getUsuario(), vo.getPassword());
+		userObj = user.validarUsuario(vo.getUsername(), vo.getPassword());
 		
 		if (userObj != null) {
 			vo.setEstadoUsuario(true);

@@ -9,6 +9,10 @@ import java.util.Set;
  */
 public class Grupo implements java.io.Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int idGrupo;
 	private String grupo;
 	private Set equipos = new HashSet(0);

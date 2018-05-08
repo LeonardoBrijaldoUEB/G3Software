@@ -9,6 +9,10 @@ import java.util.Set;
  */
 public class Pais implements java.io.Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Integer idPais;
 	private String nombrePais;
 	private Set equipos = new HashSet(0);

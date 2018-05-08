@@ -8,6 +8,10 @@ import java.util.Date;
  */
 public class Jugador implements java.io.Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Integer idJugador;
 	private Equipo equipo;
 	private String nombre;

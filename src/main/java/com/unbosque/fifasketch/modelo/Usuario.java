@@ -6,14 +6,20 @@ package com.unbosque.fifasketch.modelo;
  */
 public class Usuario implements java.io.Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int idUsuario;
 	private String nombre;
 	private String apellido;
 	private String username;
 	private String password;
+	private boolean estadoUsuario;
 
 	public Usuario() {
 	}
+	
 
 	public Usuario(int idUsuario, String nombre, String apellido, String username, String password) {
 		this.idUsuario = idUsuario;
@@ -22,7 +28,6 @@ public class Usuario implements java.io.Serializable {
 		this.username = username;
 		this.password = password;
 	}
-
 	public int getIdUsuario() {
 		return this.idUsuario;
 	}
@@ -30,6 +35,8 @@ public class Usuario implements java.io.Serializable {
 	public void setIdUsuario(int idUsuario) {
 		this.idUsuario = idUsuario;
 	}
+
+
 
 	public String getNombre() {
 		return this.nombre;
@@ -62,5 +69,17 @@ public class Usuario implements java.io.Serializable {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
+
+	public boolean isEstadoUsuario() {
+		return estadoUsuario;
+	}
+
+
+	public void setEstadoUsuario(boolean estadoUsuario) {
+		this.estadoUsuario = estadoUsuario;
+	}
+	
+	
 
 }

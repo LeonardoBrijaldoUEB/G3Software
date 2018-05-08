@@ -9,6 +9,10 @@ import java.util.Set;
  */
 public class CopasMundo implements java.io.Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Integer idCopasMundo;
 	private String anfitrion;
 	private Integer ano;
