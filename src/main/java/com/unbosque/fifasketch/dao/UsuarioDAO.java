@@ -1,11 +1,16 @@
 package com.unbosque.fifasketch.dao;
 
+import javax.ejb.Local;
+import javax.ejb.Stateless;
+
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import com.unbosque.fifasketch.interfaceDao.IUsuarioDAO;
 import com.unbosque.fifasketch.modelo.Usuario;
 import com.unbosque.fifasketch.util.FifaSketchHibernateUtil;
 
+@Stateless
+@Local
 public class UsuarioDAO implements IUsuarioDAO {
 
 	@Override

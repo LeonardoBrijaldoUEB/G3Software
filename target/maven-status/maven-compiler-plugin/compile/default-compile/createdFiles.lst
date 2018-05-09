@@ -1,0 +1,17 @@
+com\unbosque\fifasketch\modelo\Tecnico.class
+com\unbosque\fifasketch\modelo\FaseTorneo.class
+com\unbosque\fifasketch\interfaceDao\IUsuarioDAO.class
+com\unbosque\fifasketch\modelo\Partido.class
+com\unbosque\fifasketch\modelo\Jugador.class
+com\unbosque\fifasketch\dao\UsuarioDAO.class
+com\unbosque\fifasketch\ws\rest\AplicationRoot.class
+com\unbosque\fifasketch\ws\rest\service\ServiceLoginUser.class
+com\unbosque\fifasketch\modelo\Participaciones.class
+com\unbosque\fifasketch\modelo\Usuario.class
+com\unbosque\fifasketch\ws\rest\filter\UserValidationFilter.class
+com\unbosque\fifasketch\modelo\Grupo.class
+com\unbosque\fifasketch\modelo\Pais.class
+com\unbosque\fifasketch\modelo\ParticipacionesId.class
+com\unbosque\fifasketch\modelo\Equipo.class
+com\unbosque\fifasketch\util\FifaSketchHibernateUtil.class
+com\unbosque\fifasketch\modelo\CopasMundo.class
